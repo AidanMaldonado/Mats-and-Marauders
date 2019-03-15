@@ -9,12 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var mats = 0
+    var marauders = 0
 
+    @IBOutlet weak var matsLabel: UILabel!
+    @IBOutlet weak var marauderLabel: UILabel!
+    @IBOutlet weak var zoneTextLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func getMatsButton() {
+        mats += 1
+        matsLabel.text = String(mats)
+    }
+    
+    @IBAction func trainMarauders() {
+        marauders += 1
+        marauderLabel.text = String(marauders)
+    }
+    
 }
 

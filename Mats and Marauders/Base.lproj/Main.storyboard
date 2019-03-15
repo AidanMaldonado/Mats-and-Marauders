@@ -80,12 +80,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Get Mats"/>
+                                <connections>
+                                    <action selector="getMatsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGM-OP-X93"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUp-8K-cQx">
                                 <rect key="frame" x="174" y="561" width="192" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Train marauder"/>
+                                <connections>
+                                    <action selector="trainMarauders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6dh-di-eIv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq3-07-Twt">
                                 <rect key="frame" x="39" y="88" width="19" height="36"/>
@@ -105,6 +111,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="marauderLabel" destination="UMl-U8-ifu" id="C2p-gK-HLc"/>
+                        <outlet property="matsLabel" destination="gq3-07-Twt" id="ER4-4S-ySy"/>
+                        <outlet property="zoneTextLabel" destination="Wnm-w2-QJH" id="HL5-Ms-rHW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
